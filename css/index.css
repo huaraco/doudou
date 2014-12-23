@@ -55,9 +55,9 @@ body {
 }
 
 .banner-text-desc {
-    padding: 10px 60px;
+    padding: 10px 70px;
     color: #71d1d1;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 .banner-text-desc .red {
     color: #f39600;
@@ -199,9 +199,10 @@ body {
     margin: 0 auto;
 }
 .result-text {
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
+    font-size: 1.5em;
     color: #71d1d1;
-    padding: 10px 60px;
+    padding: 10px 72px;
 }
 .result-no {
     color: #ff4e5c;
@@ -211,7 +212,7 @@ body {
 }
 .result-desc {
     margin-top: 12px;
-    font-size: 1em;
+    font-size: 1.3em;
     color: #9b7b7e;
 }
 .mask {
@@ -257,6 +258,7 @@ body {
 }
 @media screen and (max-width: 420px) {
     .banner-text-desc {
+        padding: 10px 60px;
         color: #71d1d1;
         font-size: 1.2em;
     }
@@ -296,6 +298,7 @@ body {
 }
 @media screen and (max-width: 320px) {
     .banner-text-desc {
+        padding: 10px 60px;
         color: #71d1d1;
         font-size: 1em;
     }
@@ -325,7 +328,7 @@ body {
         color: #ff4e5c;
     }
     .result-desc {
-        margin-top: 12px;
+        margin-top: 5px;
         font-size: 0.7em;
         color: #9b7b7e;
     }
