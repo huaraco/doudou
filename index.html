@@ -17,7 +17,7 @@
             <div class="banner">
                 <div class="banner-text">
                     <div class="banner-text-desc">
-                        <span>痘痘的编号盖上后，安记忆</span>
+                        <span>痘痘的编号盖上后，按记忆</span>
                         <span class="red">从小到大的顺序点开</span>
                     </div>
                     <div class="banner-text-countdown">
@@ -30,14 +30,14 @@
         </div>
 
         <div class="content-wrap">
-            <div class="content-background">
+            <!-- <div class="content-background"> -->
                 <div class="girl">
                     <!-- girl face -->
                     <div class="girl-acne-wrap"></div>
                     <img src="images/girl.png" class="">
                 </div>
 
-            </div>
+            <!-- </div> -->
 
         </div>
     </div>
@@ -58,7 +58,7 @@
                 </div>
                 <img src="images/cloud.png">
             </div>
-            
+
         </div>
 
         <div class="content-wrap">
@@ -85,19 +85,18 @@
         </div>
     </div>
 
-    
+
 
     <script type="text/javascript" src="js/WeixinApi.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/underscore-min.js"></script>
-    <script type="text/javascript" src="js/game.min.js"></script>
-    
+    <script type="text/javascript" src="js/game.js"></script>
     <script type="text/javascript">
     var g;
 
     WeixinApi.ready(function(api) {
         var obj = {};
-        obj.link = window.location.href; 
+        obj.link = window.location.href;
         obj.imgUrl = window.location.href + "images/icon.png";
         obj.title = "挤痘狂魔";
         obj.defaultTitle = "挤痘狂魔";
@@ -148,7 +147,7 @@
         //callbackfunc();
     });
 
-    $( document ).ready(function() {
+    $(window).load(function() {
         var positions = [{
             x: '26%',
             y: '50%'
@@ -165,7 +164,7 @@
             x: '16%',
             y: '59%'
         }, {
-            x: '77%',
+            x: '82%',
             y: '38%'
         }, {
             x: '72%',
@@ -183,9 +182,10 @@
             x: '57%',
             y: '31%'
         }];
-
         g = new GAME(positions, $('#page1'), $('#page2'));
         var acnes = g.nextLevel();
+
+
     })
     </script>
 

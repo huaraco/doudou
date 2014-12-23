@@ -1,12 +1,9 @@
 @font-face {
     font-family: 'DFPShaoNvW5';
-    /*src: url('DFPShaoNvW5.eot?#iefix') format('embedded-opentype'), 
-         url('DFPShaoNvW5.woff') format('woff'), 
-         url('DFPShaoNvW5.ttf') format('truetype'), 
-         url('DFPShaoNvW5.svg#DFPShaoNvW5') format('svg');*/
+    src: url('DFPShaoNvW5.eot?#iefix') format('embedded-opentype'), url('DFPShaoNvW5.woff') format('woff'), url('DFPShaoNvW5.ttf') format('truetype'), url('DFPShaoNvW5.svg#DFPShaoNvW5') format('svg');
     src: url('DFPShaoNvW5.woff') format('woff');
-    
     /*src: url('DFPShaoNvW5.ttf') format('truetype');*/
+    
     font-weight: normal;
     font-style: normal;
 }
@@ -50,17 +47,17 @@ body {
 }
 .banner-text-desc {
     color: #71d1d1;
-    font-size: 1.1em;
+    font-size: 1.6em;
 }
 .banner-text-desc .red {
     color: #f39600;
 }
 .banner-text-countdown {
-    margin-top: 12px;
+    margin-top: 18px;
 }
 .banner-text-countdown span {
     color: #71d1d1;
-    font-size: 0.9em;
+    font-size: 1.4em;
 }
 .banner-text-countdown .second {
     color: #cf2230;
@@ -88,10 +85,13 @@ body {
     left: 0px;
     width: 100%;
     text-align: center;
+    margin-top: 50px;
 }
 .girl img {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    border: 0;
+    display: block;
 }
 .girl-acne-wrap {
     position: absolute;
@@ -100,25 +100,54 @@ body {
 }
 .girl-acne {
     position: absolute;
-    display: none;
+    display: block;
 }
 .girl-acne img {
     width: 60%;
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
+    background-clip: padding-box;
+    display: block;
     box-shadow: 0px 0px 15px 5px #ec9f90;
     -webkit-box-shadow: 0px 0px 13px 5px #ec9f90;
     -moz-box-shadow: 0px 0px 13px 5px #ec9f90;
 }
 .girl-text {
     position: absolute;
-    margin: 0 0 0 3px;
+    margin: -14 0 0 16px;
 }
 .girl-text span {
     font-size: 1.3em;
     font-weight: bold;
-    color: #e77201;
+}
+.girl-text .span1 {
+    color: #bb5d02;
+}
+.girl-text .span2 {
+    color: #343772;
+}
+.girl-text .span3 {
+    color: #409c40;
+}
+.girl-text .span4 {
+    color: #7f0120;
+}
+.girl-acne-dead {
+    position: absolute;
+    display: none;
+}
+.girl-acne-dead img {
+    width: 60%;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -moz-box-sizing: border-box;
+    background-clip: padding-box;
+    display: block;
+    box-shadow: 0px 0px 15px 5px #ec9f90;
+    -webkit-box-shadow: 0px 0px 13px 5px #ec9f90;
+    -moz-box-shadow: 0px 0px 13px 5px #ec9f90;
 }
 .girl-liquid {
     position: absolute;
@@ -164,39 +193,15 @@ body {
     color: #71d1d1;
 }
 .result-no {
-    color: #f39600;
+    color: #ff4e5c;
 }
 .result-title {
-    color: #f39600;
+    color: #ff4e5c;
 }
 .result-desc {
     margin-top: 12px;
     font-size: 1em;
     color: #9b7b7e;
-}
-.content-paper {
-    background: url('../images/paper.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 360px;
-    display: block;
-    border: 1px solid rgba(0, 0, 0, 0);
-}
-.bless {
-    display: block;
-    color: gray;
-    font-weight: bold;
-}
-.words {
-    width: 65%;
-    margin: 0px auto;
-    margin-top: 30px;
-    font-weight: bold;
-    display: block
-}
-.logo {
-    width: 45%;
-    margin: 10px auto;
 }
 .mask {
     z-index: 9999;
@@ -239,17 +244,61 @@ body {
     margin-top: 20px;
     width: 100%;
 }
-@media screen and (max-width: 400px) {
-    .content-paper {
-        min-height: 300px;
+@media screen and (max-width: 420px) {
+    .banner-text-desc {
+        color: #71d1d1;
+        font-size: 1.2em;
+    }
+    .banner-text-desc .red {
+        color: #f39600;
+    }
+    .banner-text-countdown {
+        margin-top: 10px;
+    }
+    .banner-text-countdown span {
+        color: #71d1d1;
+        font-size: 0.9em;
+    }
+    .banner-text-countdown .second {
+        color: #cf2230;
+        font-weight: bold;
+        font-size: 1.3em;
     }
 }
 @media screen and (max-width: 320px) {
-    .content-paper {
-        min-height: 250px;
+    .banner-text-desc {
+        color: #71d1d1;
+        font-size: 1em;
     }
-    .words {
-        font-size: 10pt;
+    .banner-text-desc .red {
+        color: #f39600;
+    }
+    .banner-text-countdown {
+        margin-top: 10px;
+    }
+    .banner-text-countdown span {
+        color: #71d1d1;
+        font-size: 0.8em;
+    }
+    .banner-text-countdown .second {
+        color: #cf2230;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .result-text {
+        font-size: 1em;
+        color: #71d1d1;
+    }
+    .result-no {
+        color: #ff4e5c;
+    }
+    .result-title {
+        color: #ff4e5c;
+    }
+    .result-desc {
+        margin-top: 12px;
+        font-size: 0.7em;
+        color: #9b7b7e;
     }
 }
 #div1 {
