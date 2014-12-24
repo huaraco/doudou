@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'DFPShaoNvW5';
     src: url('DFPShaoNvW5.eot?#iefix') format('embedded-opentype'), url('DFPShaoNvW5.woff') format('woff'), url('DFPShaoNvW5.ttf') format('truetype'), url('DFPShaoNvW5.svg#DFPShaoNvW5') format('svg');
-    src: url('DFPShaoNvW5.woff') format('woff');
+    /*src: url('DFPShaoNvW5.woff') format('woff');*/
     /*src: url('DFPShaoNvW5.ttf') format('truetype');*/
     
     font-weight: normal;
@@ -114,6 +114,7 @@ body {
 }
 .girl-acne img {
     width: 60%;
+    border: 0;
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
