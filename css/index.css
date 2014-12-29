@@ -111,6 +111,7 @@ body {
 .girl-acne {
     position: absolute;
     display: block;
+    padding: 50px;
 }
 .girl-acne img {
     width: 60%;
@@ -126,7 +127,7 @@ body {
 }
 .girl-text {
     position: absolute;
-    margin: -14 0 0 16px;
+    margin: -14 0 0 23px;
 }
 .girl-text span {
     font-size: 1.3em;
