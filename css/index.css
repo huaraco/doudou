@@ -20,6 +20,7 @@ body {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     font-family: 'DFPShaoNvW5';
+    overflow: hidden;
 }
 /**/
 
@@ -95,7 +96,7 @@ body {
     left: 0px;
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
 }
 .girl img {
     width: 90%;
