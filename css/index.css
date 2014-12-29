@@ -335,7 +335,10 @@ body {
         color: #9b7b7e;
     }
     .girl {
-        margin-top: 20px;
+        margin-top: 0px;
+    }
+    .banner-wrap {
+        margin-bottom: 0;
     }
 }
 #div1 {
